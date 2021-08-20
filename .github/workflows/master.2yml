@@ -56,7 +56,7 @@ jobs:
           file: ./dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/jawaher7/exam-day2:latest
+          tags: ghcr.io/${{ github.repository_owner }}/jawaher7:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
